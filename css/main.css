@@ -1,0 +1,45 @@
+#panel{
+    width:600px;
+    background-color: #eee;
+    margin: 0 auto;
+    padding: 30px;
+   
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* 清除項目點 */
+}
+#todo_list .checkbox{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    margin-right: 10px;
+    cursor:pointer;
+}
+#todo_list .content{
+  flex:1;
+}
+#todo_list .delete{
+    cursor:pointer;
+    padding: 0 10px;
+}
+#todo_list li{
+    display: flex;
+    padding: 10px;
+}
+#todo_list li:hover{
+    background-color: #dbd6d6;
+}
+
+#todo_list li.complete .checkbox{
+    background-color: rgb(21, 244, 73);
+}
+#todo_list li.complete .content{
+    text-decoration: line-through;
+}
+
+/* #temp_hide{
+    display: none;
+} */
